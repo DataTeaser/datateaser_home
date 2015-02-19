@@ -11,7 +11,7 @@
 
   <style type="text/css">
     body {
-      font-family: Verdana; 
+      font-family: Verdana, Arial;
       font-size: 12px;
       margin-bottom: 10px;
     }
@@ -32,18 +32,18 @@
 
     #jumbo h2 {
       font-size: 28px;
-      font-family: Verdana;
+      font-family: Verdana, Arial;
     }
 
     #jumbo h3 {
       font-size: 16px;
-      font-family: Verdana;
+      font-family: Verdana, Arial;
       font-weight: bold;
     }
 
     #jumbo li {
       font-size: 16px;
-      font-family: Verdana;
+      font-family: Verdana, Arial;
     }
 
     .nav_links {
@@ -78,7 +78,7 @@
         <div class="col-xs-4">
           <br>
           <ul class="nav nav-pills">
-            <!-- <li><a href="#" class="nav_links">About</a></li> -->
+            <li><a href="#services" class="nav_links">Services</a></li>
             <li><a href="#projects" class="nav_links">Projects</a></li>
             <li><a href="#contact" class="nav_links">Contact Us</a></li>
           </ul>
@@ -88,7 +88,7 @@
         <div class="col-xs-12 text-center">
           <div id="landing_content">
             <h2>DataTeaser is a data science and software engineering company</h2>
-            <h3>We have a good understanding of machine learning, text analysis, and data mining.</h3>
+            <h3>We have a good understanding of machine learning, NLP, and data mining.</h3>
             <br>
             <br>
             <div class="row">
@@ -108,25 +108,43 @@
   </div>
   <div class="container">
     <div class="row">
+      <div class="col-xs-12 text-center" id="services">
+          <h3>Services</h3>
+      </div>
+      <div class="col-xs-12 text-center" id="services">
+          <h4>We offer software services which includes:</h4>
+          <br>
+          <h5>Natural Language Processing</h5>
+          <h6>sentiment analysis, automatic summarization, etc.</h6>
+          <br>
+          <h5>Machine Learning</h5>
+          <h6>classification, clustering, etc.</h6>
+          <br>
+          <h5>Data Mining</h5>
+          <h6>information retrieval, web scraping, etc.</h6>
+      </div>
+    </div>
+    <br>
+    <div class="row" style="background-color: #eee;">
       <div class="col-xs-12 text-center" id="projects">
           <h3>Projects</h3>
       </div>
       <div class="col-xs-4 text-center">
           <h4>TextTeaser</h4>
           <p>TextTeaser is an open source automatic summarization algorithm that uses simple natural language processing and machine learning to produce good results. It receives positive feedback in developer community.<p>
-          <p>Check it out on Github.</p>
+          <p><a href="https://github.com/MojoJolo/textteaser">Check it out on Github.</a></p>
       </div>
       <div class="col-xs-4 text-center">
           <h4>Philippine Earthquake Map</h4>
           An image that visualized all the earthquakes that happened in the Philippines in 2014. It uses the data gathered from the Philippine Institute of Volcanology and Seismology and illustrated it using Google Maps.</p>
-          <p>See the image here.</p>
+          <p><a href="static/img/map.png">See the image here.</a></p>
       </div>
       <div class="col-xs-4 text-center">
           <h4>Halalan 2016</h4>
           <p>This project crawls the different news articles in the Philippines and check if there are politicians mentioned. It uses a sentiment analysis algorithm to determine if the news about the politician is good or bad.</p>
           <p>Coming soon.</p>
       </div>
-    </div><br>
+    </div>
     <br>
     <div class="row">
       <div class="col-xs-12 text-center" id="contact">
