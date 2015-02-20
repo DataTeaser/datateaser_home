@@ -83,14 +83,17 @@
             <li><a href="#contact" class="nav_links">Contact Us</a></li>
           </ul>
         </div>
+        <div class="col-xs-offset-2 col-xs-8" id="tt_alert" style="display: none;">
+          <div class="alert alert-warning text-center" role="alert">
+            <strong>TextTeaser</strong> is now part of DataTeaser. We can provide custom summarizers based on your company needs.
+          </div>
+        </div>
       </div>
       <div class="row">
         <div class="col-xs-12 text-center">
           <div id="landing_content">
             <h2>DataTeaser is a data science and software engineering company</h2>
             <h3>We have a good understanding of machine learning, NLP, and data mining.</h3>
-            <br>
-            <br>
             <div class="row">
               <div class="col-xs-offset-3 col-xs-6 text-center">
                 <a href="#contact"><button type="submit" class="btn btn-primary contact_us_btn">Contact Us</button></a>
@@ -99,7 +102,7 @@
           </div>
         </div>
         <div class="col-xs-12 text-center">
-          <a href="#projects">
+          <a href="#services">
             <span class="glyphicon glyphicon-chevron-down" style="color: #eee; font-size: 50px; margin: 150px;" aria-hidden="true"></span>
           </a>
         </div>
@@ -171,5 +174,13 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    params = window.location.search.replace("?", "");
+
+    if (params == "textteaser") {
+      document.getElementById("tt_alert").style.display = "inline";
+      document.getElementById("landing_content").style.marginTop = "40px";
+    }
+  </script>
 </body>
 </html>
