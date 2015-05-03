@@ -1,203 +1,246 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="google-site-verification" content="_4kqskv1VCHHUbDtp3Q2tAAa5svWYT8sb0TxDxHDT1I" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Data Teaser - Data Science and Software Engineering</title>
+    <meta name="description" content="Data Science, Software Engineering, Natural Language Processing, Machine Learning, Data Mining">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/lato/fontface.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/gray.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <title>DataTeaser - Data Science and Software Engineering company</title>
-  <meta name="description" content="DataTeaser is a data science and software engineering company. We have a good understanding of machine learning, natural language processing, and data mining." />
-
-  <style type="text/css">
-    body {
-      font-family: Verdana, Arial;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-
-    #jumbo {
-      background: url("static/img/bg.jpg") no-repeat center;
-      background-size: cover;
-      height: 700px;
-      color: #eee;
-      padding-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    #jumbo h1 {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    #jumbo h2 {
-      font-size: 28px;
-      font-family: Verdana, Arial;
-    }
-
-    #jumbo h3 {
-      font-size: 16px;
-      font-family: Verdana, Arial;
-      font-weight: bold;
-      color: #eee;
-    }
-
-    #jumbo li {
-      font-size: 16px;
-      font-family: Verdana, Arial;
-    }
-
-    .nav_links {
-      color: #eee;
-    }
-
-    .nav_links:hover {
-      color: #333;
-    }
-
-    #landing_content {
-      margin-top: 100px;
-      padding: 50px;
-    }
-
-    .contact_us_btn {
-      width: 60%;
-      font-size: 16px;
-      background: #065F88;
-      border: none;
-      height: 50px;
-    }
-
-    h3 {
-      color: #065F88;
-    }
-  </style>
 </head>
 <body>
-  <div class="jumbotron" id="jumbo">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-8">
-            <h1>DataTeaser</h1>
-        </div>
-        <div class="col-xs-4">
-          <br>
-          <ul class="nav nav-pills">
-            <li><a href="#services" class="nav_links">Services</a></li>
-            <li><a href="#projects" class="nav_links">Projects</a></li>
-            <li><a href="#contact" class="nav_links">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-offset-2 col-xs-8" id="tt_alert" style="display: none;">
-          <div class="alert alert-warning text-center" role="alert">
-            <strong>TextTeaser</strong> is now part of DataTeaser. We can provide custom summarizers based on your company needs.
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <div id="landing_content">
-            <h2>DataTeaser is a data science and software engineering company</h2>
-            <h3>We have a good understanding of machine learning, NLP, and data mining.</h3>
-            <br>
-            <div class="row">
-              <div class="col-xs-offset-3 col-xs-6 text-center">
-                <a href="#contact"><button type="submit" class="btn btn-primary contact_us_btn">Contact Us</button></a>
-              </div>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Header -->
+    <header class="navbar navbar-fixed-top navbar-default" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle btn-transparent collapsed" type="button" data-toggle="collapse" data-target=".ds-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-navicon fa-lg text-primary"></i>
+                </button>
+                <img class="navbar-brand" src="img/dt-logo-web.svg" alt="Data Teaser">
             </div>
-          </div>
+            <nav class="collapse navbar-collapse ds-navbar-collapse">
+                <button class="btn btn-primary btn-lg navbar-right lets-talk js_go-to-scroll" id="reachus">Let's Talk</button>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="js_go-to-scroll" href id="services">Services</a></li>
+                    <li><a class="js_go-to-scroll" href id="projects">Projects</a></li>
+                    <li><a class="js_go-to-scroll" href id="about">About</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="col-xs-12 text-center">
-          <a href="#services">
-            <span class="glyphicon glyphicon-chevron-down" style="color: #eee; font-size: 50px; margin: 150px;" aria-hidden="true"></span>
-          </a>
+    </header>
+    <!-- Header -->
+
+    <!-- Hero Shot -->
+    <div class="container-fluid hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="h1">Data Science. <br>Software Engineering.</h1>
+                    <h2 class="h2">We're experts at that.</h2>
+                </div> 
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 text-center" id="services">
-          <h3>Services</h3>
-      </div>
-      <div class="col-xs-12 text-center" id="services">
-          <h4>We offer software services which includes:</h4>
-          <br>
-          <h5>Natural Language Processing</h5>
-          <h6>sentiment analysis, automatic summarization, etc.</h6>
-          <br>
-          <h5>Machine Learning</h5>
-          <h6>classification, clustering, etc.</h6>
-          <br>
-          <h5>Data Mining</h5>
-          <h6>information retrieval, web scraping, etc.</h6>
-      </div>
-    </div>
-    <br>
-    <div class="row" style="background-color: #eee; border-top: 2px solid #ccc;">
-      <div class="col-xs-12 text-center" id="projects">
-          <h3>Projects</h3>
-      </div>
-      <div class="col-xs-4 text-center">
-          <h4>TextTeaser</h4>
-          <p>TextTeaser is an open source automatic summarization algorithm that uses simple natural language processing and machine learning to produce good results. It receives positive feedback in developer community.<p>
-          <p><a href="https://github.com/DataTeaser/textteaser">Check it out on Github.</a></p>
-      </div>
-      <div class="col-xs-4 text-center">
-          <h4>Philippine Earthquake Map</h4>
-          An image that visualized all the earthquakes that happened in the Philippines in 2014. It uses the data gathered from the Philippine Institute of Volcanology and Seismology and illustrated it using Google Maps.</p>
-          <p><a href="http://www.summarizerman.com/post/111736761555/visualizing-earthquake-in-the-philippines">More info here.</a></p>
-      </div>
-      <div class="col-xs-4 text-center">
-          <h4>Halalan 2016</h4>
-          <p>This project crawls the different news articles in the Philippines and check if there are politicians mentioned. It uses a sentiment analysis algorithm to determine if the news about the politician is good or bad.</p>
-          <p>Coming soon.</p>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-xs-12 text-center" id="contact">
-          <h3>Contact Us</h3>
-      </div>
-      <div class="col-xs-12 text-center">
-        <h6>Email us at</h6>
-        <h5><a href="mailto:info@datateaser.com">info@datateaser.com</a></h5>
-        <br>
-        <h6>Phone</h6>
-        <h5>+63 917 526 0297</h5>
-        <br>
-        <h6>Twitter</h6>
-        <h5><a href="https://twitter.com/DataTeaser_">@DataTeaser_</a></h5>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-xs-12">
-          <footer class="text-center">
-            &copy; 2015 DataTeaser</a>
-          </footer>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript">
-    params = window.location.search.replace("?", "");
+    <!-- Hero Shot -->
 
-    if (params == "textteaser") {
-      document.getElementById("tt_alert").style.display = "inline";
-      document.getElementById("landing_content").style.marginTop = "40px";
-    }
-  </script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- What We Can Do -->
+    <div class="container-fluid showcase" id="marker_services">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="h2 text-center">Things We're Good At</h2>
+                </div>
 
-    ga('create', 'UA-59995030-1', 'auto');
-    ga('send', 'pageview');
+                <div class="showcase-section">
+                    <i class="showcase-icon ico-nlp"></i>
+                    <h3 class="h3">Natural Language Processing</h3>
+                    <ul class="list-unstyled">
+                        <li>Sentiment Analysis</li>
+                        <li>Automatic Summarization</li>
+                    </ul>
+                </div>
+                <div class="showcase-section">
+                    <i class="showcase-icon ico-ml"></i>
+                    <h3 class="h3">Machine Learning</h3>
+                    <ul class="list-unstyled">
+                        <li>Classification</li>
+                        <li>Clustering</li>
+                    </ul>
+                </div>
+                <div class="showcase-section">
+                    <i class="showcase-icon ico-dm"></i>
+                    <h3 class="h3">Data Mining</h3>textteaser
+                    <ul class="list-unstyled">
+                        <li>Information Retrieval</li>
+                        <li>Web Scraping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- What We Can Do -->
 
-  </script>
+    <!-- The Projects -->
+    <div class="container-fluid heading-block-color" id="marker_projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="h2 text-center heading-block heading-block-color">Our Works</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid projects">
+
+        <div class="owl-carousel carousel text-center" id="owl-carousel">
+            <!-- Section -->
+            <div class="carousel-section">
+                <div class="center-block">
+                    <h3 class="h3 animated fadeInDown">Text Teaser</h3>
+                    <p class="animated fadeInUp"><a href="https://github.com/DataTeaser/textteaser" target="_blank">TextTeaser</a> is an open source automatic summarization algorithm that uses simple natural language processing and machine learning to produce good results. </p>
+                    <a href="https://github.com/DataTeaser/textteaser" target="_blank" class="btn btn-primary btn-lg animated fadeInDown"><i class="fa fa-github-alt"></i> Check on GitHub</a>
+                    <div class="bg bg-textteaser animated fadeIn"></div>
+                </div>
+            </div>
+            <!-- Section -->
+
+            <!-- Section -->
+            <div class="carousel-section">
+                <div class="center-block">
+                    <h3 class="h3 animated">Philippine Earthquake Map</h3>
+                    <p class="animated">An image that visualized all the earthquakes that happened in the Philippines in 2014. It uses the data gathered from the Philippine Institute of Volcanology and Seismology and illustrated it using Google Maps.</p>
+                    <a href="http://www.summarizerman.com/post/111736761555/visualizing-earthquake-in-the-philippines" target="_blank" class="btn btn-primary btn-lg animated"><i class="fa fa-external-link"></i> More Info</a>
+                </div>
+                <div class="bg bg-earthquakemap animated"></div>
+            </div>
+            <!-- Section -->
+
+            <!-- Section -->
+            <div class="carousel-section">
+                <div class="center-block">
+                    <h3 class="h3 animated">Halalan 2016</h3>
+                    <p class="animated">This project crawls the different news articles in the Philippines and check if there are politicians mentioned. It uses a sentiment analysis algorithm to determine if the news about the politician is good or bad.</p>
+                    <h3 class="btn-transparent btn btn-lg animated" style="margin-top: 0;">Coming Soon</h3>
+                </div>
+                <div class="bg bg-halalan animated"></div>
+            </div>
+            <!-- Section -->
+        </div>
+    </div>
+    <!-- The Projects -->
+
+    <!-- The Team -->
+    <div class="container-fluid textured" id="marker_about">
+        <div class="container">
+            <div class="row">
+                <div class="story-text">
+                    <h2 class="h2">The Story Behind <span class="text-primary">DataTeaser</span></h2>
+                    <p class="lead"><a href="https://github.com/MojoJolo" target="_blank">Jolo</a>, <a href="https://github.com/mikkogozalo" target="_blank">Mikko</a>, and <a href="https://github.com/yowmamasita" target="_blank">Ben</a> all met working remotely for a startup in San Francisco. Jolo worked as a Data Scientist, while Mikko and Ben were software engineers. After that startup got acquired, they all went separate ways but still maintained contact with each other.</p>
+
+                    <p>On the side, Jolo is building TextTeaser. It is the automatic summarization algorithm he created for his MS CS thesis. TextTeaser acquired several paying users but it didn't push through. Developing it further needs a team. Jolo then asked Mikko, still working remotely as a sofware developer in a different company, and Ben, now a senior software engineer, to join and start a company together.
+                    </p>
+
+                    <p>They also noticed that there is still a need not just in automatic summarization, but also in various text analysis and machine learning problems. That's why they started DataTeaser to offer natural language processing (text analysis), machine learning, and data mining solutions to companies that are in need of them.</p>
+                    
+                </div>
+                <div class="story-people">
+                    <ul class="list-unstyled center-block">
+                        <li class="avatar">
+                            <div class="links">
+                                <div class="buttons animated">
+                                    <a href="https://github.com/MojoJolo" target="_blank" class="btn btn-transparent">
+                                        <i class="fa fa-fw fa-2x fa-github-alt"></i>
+                                    </a>
+                                    <a href="https://twitter.com/MojoJolo" target="_blank" class="btn btn-transparent">
+                                        <i class="fa fa-fw fa-2x fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="img/avatar-jolo.jpg" alt="Jolo Balbin" class="img-responsive img-circle grayscale">
+                        </li>
+                        <li class="avatar">
+                            <div class="links">
+                                <div class="buttons animated">
+                                    <a href="https://github.com/mikkogozalo" target="_blank" class="btn btn-transparent">
+                                        <i class="fa fa-fw fa-2x fa-github-alt"></i>
+                                    </a>
+                                    <a href="https://twitter.com/mikkogozalo" target="_blank" class="btn btn-transparent">
+                                        <i class="fa fa-fw fa-2x fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="img/avatar-mikko.jpg" alt="Mikko Gozalo" class="img-responsive img-circle grayscale">
+                        </li>
+                        <li class="avatar">
+                            <div class="links">
+                                <div class="buttons animated">
+                                    <a href="https://github.com/yowmamasita" target="_blank" class="btn btn-transparent">
+                                        <i class="fa fa-fw fa-2x fa-github-alt"></i>
+                                    </a>
+                                    <a href="https://twitter.com/bensarmiento" target="_blank" class="btn btn-transparent">
+                                        <i class="fa fa-fw fa-2x fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="img/avatar-ben.jpg" alt="Ben Sarmiento" class="img-responsive img-circle grayscale">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Team -->
+
+    <!-- Contact Us -->
+    <div class="container-fluid reach-us" id="marker_reachus">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="h2 text-center">Reach Us</h2>
+                    <ul class="list-unstyled lead">
+                        <li>
+                            <i class="fa fa-fw fa-envelope"></i>&nbsp;
+                            <a href="mailto:info@datateaser.com">info@datateaser.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-fw fa-twitter"></i>&nbsp;
+                            <a href="https://twitter.com/DataTeaser_" target="_blank">DataTeaser_</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer text-center">
+                <span class="footer-text">&copy; <span id="currentYear">Current Year</span> DataTeaser</span>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Us -->
+
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.gray.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
